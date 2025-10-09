@@ -1,6 +1,8 @@
 Source,Email,Chat,Voice,Transcription Ingestion,Attachment,Transcription Backlog
-Total,251674,24111,3723,2174,43852,30141
-"Lotus: 15281","MicrosoftTeams: 24111","NTR-X: 3723","","Lotus: 2002","NTR-X: 30141"
-"Exchange: 50650","","","","Exchange: 21699",""
-"Bloomberg: 185529","","","","Bloomberg: 1256",""
-"SMS: 214","","","","MicrosoftTeams: 18895",""
+Total,289768,24111,3723,2414,46453,29901
+Lotus,17171,0,0,0,2334,0
+Exchange,58240,0,0,0,23737,0
+NTR-X,0,0,3723,2414,0,29901
+Bloomberg,214143,0,0,0,1487,0
+MicrosoftTeams,0,24111,0,0,18895,0
+SMS,214,0,0,0,0,0
