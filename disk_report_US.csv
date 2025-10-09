@@ -1,0 +1,3 @@
+Filesystem,Size,Used,Avail,Use%,MountedOn
+/dev/nvme0n1p1,250G,187G,64G,75%,/
+/dev/nvme2n1,13T,9.9T,2.9T,78%,/mnt/data2

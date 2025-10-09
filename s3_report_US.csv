@@ -1,0 +1,7 @@
+Source,Count,Command,Type,Timestamp
+Teams_Voice_S3_Backlog,1,"/usr/local/bin/aws s3 ls s3://actimize-cs-prod-use1/smbc/NTRX_SMBC_AMER_TEAMS_MEDIA_PROD_4d8ec6f8-24f8-4203-91ef-23b55dad58f6/ | wc -l",S3,2025-10-09 12:50:10
+Msteams_S3_Backlog,1822,"aws s3 ls s3://actimize-cs-prod-use1/smbc/Smarsh/ --recursive | grep 'Hourly MS Teams Export' | wc -l",S3,2025-10-09 12:50:10
+Exchange_S3_Backlog,4,"/usr/local/bin/aws s3 ls s3://actimize-cs-prod-use1/smbc/Smarsh/ --recursive | grep 'Hourly Journaled.*\.zip$' | wc -l",S3,2025-10-09 12:50:10
+Bloomberg_IM_S3_Backlog,3,"aws s3 ls s3://actimize-cs-prod-use1/smbc/Smarsh/ --recursive | grep 'Hourly Bloomberg IM Export' | wc -l",S3,2025-10-09 12:50:10
+IPC_Backlog_S3_Backlog,1157,"/usr/local/bin/aws s3 ls s3://actimize-cs-prod-use1/smbc/NTRX_SMBC_AMER_IPC_PROD_4d8ec6f8-24f8-4203-91ef-23b55dad58f6/ | wc -l",S3,2025-10-09 12:50:10
+Bloomberg_Email_S3_Backlog,181,"aws s3 ls s3://actimize-cs-prod-use1/smbc/Smarsh/ --recursive | grep 'Hourly Bloomberg Email Export' | wc -l",S3,2025-10-09 12:50:10
