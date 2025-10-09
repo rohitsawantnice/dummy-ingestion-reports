@@ -1,16 +1,16 @@
-Category,Email,Chat,Voice,TranscriptionIngestion,Attachment,TranscriptionBacklog
-Total,153426,14469,2087,1576,27307,29104
-Lotus,7775,,,
-,,,
-Exchange,31309,,,
-,,,
-Bloomberg,114128,,,
-,,,
-SMS,214,,,
-MicrosoftTeams,,14469,,,
-NTR-X,,,2087,,29104
-,,,
-Attachment (Lotus),,,,,1246,
-Attachment (Exchange),,,,,16866,
-Attachment (Bloomberg),,,,,670,
-Attachment (MicrosoftTeams),,,,,8525,
+Date,Category,Email,Chat,Voice,TranscriptionIngestion,Attachment,TranscriptionBacklog
+2025-10-09,Total,153426,14469,2087,1576,27307,29104
+2025-10-09,Lotus,7775,,,
+2025-10-09,,,,
+2025-10-09,Exchange,31309,,,
+2025-10-09,,,,
+2025-10-09,Bloomberg,114128,,,
+2025-10-09,,,,
+2025-10-09,SMS,214,,,
+2025-10-09,MicrosoftTeams,,14469,,,
+2025-10-09,NTR-X,,,2087,,29104
+2025-10-09,,,,
+2025-10-09,Attachment (Lotus),,,,,1246,
+2025-10-09,Attachment (Exchange),,,,,16866,
+2025-10-09,Attachment (Bloomberg),,,,,670,
+2025-10-09,Attachment (MicrosoftTeams),,,,,8525,
