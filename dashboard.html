@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ingestion Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+  body { font-family: Arial; background: #111; color: #eee; padding: 20px; }
+  .card { background: #222; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+  canvas { width: 100%; height: 300px; }
+</style>
+</head>
+<body>
+
+<h1>📊 Ingestion Dashboard</h1>
+<p>Data from S3 (updated daily)</p>
+
+<div class="card">
+  <h2>Email vs Chat vs Voice (by Date)</h2>
+  <canvas id="volumeChart"></canvas>
+</div>
+
+<div class="card">
+  <h2>Attachments & Backlog</h2>
+  <canvas id="attachmentChart"></canvas>
+</div>
+
+<script>
+//const csvUrl = "https://your-bucket.s3.amazonaws.com/report.csv"; // <-- replace with S3 URL
+const csvUrl = "C:\Users\rohits\OneDrive - Nice Systems Ltd\Desktop\New folder\demo\report.csv"
+
+async function fetchCSV(url) {
+  const response = await fetch(url);
+  const text = await response.text();
+  return text;
+}
+
+function parseCSV(data) {
+  const rows = data.trim().split("\n");
+  const headers = rows[0].split(",");
+  return rows.slice(1).map(row => {
+    const values = row.split(",");
+    return headers.reduce((obj, h, i) => { obj[h] = values[i]; return obj; }, {});
+  });
+}
+
+function groupByDate(data) {
+  const grouped = {};
+  data.forEach(row => {
+    if (!grouped[row.Date]) grouped[row.Date] = { email:0, chat:0, voice:0, attach:0, backlog:0 };
+    grouped[row.Date].email += Number(row.Email);
+    grouped[row.Date].chat += Number(row.Chat);
+    grouped[row.Date].voice += Number(row.Voice);
+    grouped[row.Date].attach += Number(row.Attachment);
+    grouped[row.Date].backlog += Number(row.TranscriptionBacklog);
+  });
+  return grouped;
+}
+
+async function createDashboard() {
+  const csvData = await fetchCSV(csvUrl);
+  const parsed = parseCSV(csvData);
+  const grouped = groupByDate(parsed);
+
+  const labels = Object.keys(grouped);
+  const email = labels.map(d => grouped[d].email);
+  const chat = labels.map(d => grouped[d].chat);
+  const voice = labels.map(d => grouped[d].voice);
+  const attach = labels.map(d => grouped[d].attach);
+  const backlog = labels.map(d => grouped[d].backlog);
+
+  // Chart 1
+  new Chart(document.getElementById('volumeChart'), {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        { label: 'Email', data: email, borderColor: 'orange' },
+        { label: 'Chat', data: chat, borderColor: 'cyan' },
+        { label: 'Voice', data: voice, borderColor: 'lime' },
+      ]
+    },
+    options: { responsive: true, plugins: { legend: { labels: { color: 'white' } } },
+      scales: { x: { ticks: { color: 'white' } }, y: { ticks: { color: 'white' } } } }
+  });
+
+  // Chart 2
+  new Chart(document.getElementById('attachmentChart'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        { label: 'Attachments', data: attach, backgroundColor: 'dodgerblue' },
+        { label: 'Backlog', data: backlog, backgroundColor: 'crimson' },
+      ]
+    },
+    options: { responsive: true, plugins: { legend: { labels: { color: 'white' } } },
+      scales: { x: { ticks: { color: 'white' } }, y: { ticks: { color: 'white' } } } }
+  });
+}
+
+createDashboard();
+</script>
+</body>
+</html>
