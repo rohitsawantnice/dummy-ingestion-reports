@@ -1,0 +1,11 @@
+Service Name,Status,Last Seen
+Nice.Common.Service.DataAcquisition.service,active,Running
+connectors.service,unknown,inactive (dead)
+connectorsClonedInstance.service,unknown,inactive (dead)
+dataprocessing,inactive,4 months 20 days ago
+Nice.Common.Service.Reconciliation.service,active,Running
+rabbitmq-server.service,active,Running
+Nice.Common.Service.MetadataIngestion.service,inactive,2 months 15 days ago
+Nice.EmployeeRandomSampling.service,active,Running
+Nice.GenericIngestService.service,active,Running
+move-processed-emails-to-s3.service,active,Running
