@@ -1,0 +1,8 @@
+Source,Count,Command,Type,Timestamp
+Employee,12,"ls /mnt/data2/DAS/Input/Reconciliation/Incoming/employee/Input | wc -l",Local,2025-10-09 12:46:52
+Hearsay,315,"find /mnt/data2/svxincoming/email/hearsay/input  -type f -name '*.eml' | wc -l",Local,2025-10-09 12:46:52
+Lotusemail,115570,"find /mnt/data2/svxincoming/email/lotus/input -type f -name '*.eml' | wc -l",Local,2025-10-09 12:46:52
+Smarshemail,2032065,"find /mnt/data2/svxincoming/email/smarshemail/input -type f -name '*.eml' | wc -l",Local,2025-10-09 12:46:52
+Bloomberg Email,437717,"find /mnt/data2/svxincoming/email/bloomberg/input -type f | wc -l",Local,2025-10-09 12:46:52
+Smarsh attachment  count,1525993,"find /mnt/data2/svxincoming/chat/smarsh/attachment -type f | wc -l",Local,2025-10-09 12:46:52
+Smarsh Chat,508338,"find /mnt/data2/svxincoming/chat/smarsh/input -type f | wc -l",Local,2025-10-09 12:46:52
