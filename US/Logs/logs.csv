@@ -1,1 +1,29 @@
-
+2025-10-14 09:53:44.539 | DEBUG | .NET TP Worker, 27 | ,  | | Logger | received successful response from ActOne Api.
+2025-10-14 09:53:44.539 | DEBUG | .NET TP Worker, 27 | ,  | | Logger | checking for cookie in response.
+2025-10-14 09:53:44.539 | DEBUG | .NET TP Worker, 27 | ,  | | Logger | received session cookies in response
+2025-10-14 09:53:44.539 | DEBUG | .NET TP Worker, 27 | ,  | | Logger | total session cookies received count:1
+2025-10-14 09:53:44.539 | INFO  | .NET TP Worker, 27 | ,  | | Logger | ActOne authentication successful.
+2025-10-14 09:53:44.539 | INFO  | .NET TP Worker, 27 | ,  | | Logger | Successfully authenticated with ActOne API
+2025-10-14 09:53:44.539 | DEBUG | .NET TP Worker, 27 | ,  | | Logger | Getting random sampling policies from ActOne.
+2025-10-14 09:53:44.539 | INFO  | .NET TP Worker, 27 | ,  | | Logger | Started fetching policy info from ActOne API.
+2025-10-14 09:53:44.539 | INFO  | .NET TP Worker, 27 | ,  | | Logger | Requesting policies with url:http://msc-pl-aui01-smb.use1.niceondemandaws.internal:8080/RCM/api/v1/platform-lists/CSEmployeeRandomSamplingConfig/filtered
+2025-10-14 09:53:44.557 | INFO  | .NET TP Worker, 27 | ,  | | Logger | ActOne policies request successful.
+2025-10-14 09:53:44.557 | INFO  | .NET TP Worker, 27 | ,  | | Logger | Returned 3 policies from ActOne API.
+2025-10-14 09:53:44.557 | INFO  | .NET TP Worker, 27 | ,  | | Logger | Fetched 3 random sampling policies from ActOne.
+2025-10-14 09:53:44.557 | DEBUG | .NET TP Worker, 27 | ,  | | Logger | Started looping though random sampling policies.
+2025-10-14 09:53:44.557 | DEBUG | .NET TP Worker, 27 | ,  | | Logger | Started processing random sampling policy: NSMPDualHatRegisteredRep.
+2025-10-14 09:53:44.557 | INFO  | .NET TP Worker, 27 | ,  | | Logger | Scheduling policy 'NSMPDualHatRegisteredRep' to run at 2025-11-01T06:30:00Z.
+2025-10-14 09:53:44.557 | DEBUG | .NET TP Worker, 27 | ,  | | Logger | Policy NSMPDualHatRegisteredRep has been updated with new wait time:17.20:36:15.4422346.
+2025-10-14 09:53:44.557 | DEBUG | .NET TP Worker, 27 | ,  | | Logger | Started processing random sampling policy: NSMPDualHatRegisteredSup.
+2025-10-14 09:53:44.557 | INFO  | .NET TP Worker, 27 | ,  | | Logger | Scheduling policy 'NSMPDualHatRegisteredSup' to run at 2025-11-01T06:15:00Z.
+2025-10-14 09:53:44.557 | DEBUG | .NET TP Worker, 27 | ,  | | Logger | Policy NSMPDualHatRegisteredSup has been updated with new wait time:17.20:21:15.4422346.
+2025-10-14 09:53:44.557 | DEBUG | .NET TP Worker, 27 | ,  | | Logger | Started processing random sampling policy: NSMPNIKKO.
+2025-10-14 09:53:44.557 | INFO  | .NET TP Worker, 27 | ,  | | Logger | Scheduling policy 'NSMPNIKKO' to run at 2025-11-01T21:36:00Z.
+2025-10-14 09:53:44.557 | DEBUG | .NET TP Worker, 27 | ,  | | Logger | Policy NSMPNIKKO has been updated with new wait time:18.11:42:15.4422346.
+2025-10-14 09:53:44.557 | DEBUG | .NET TP Worker, 27 | ,  | | Logger | Finished looping though random sampling policies.
+2025-10-14 09:55:44.367 | DEBUG | .NET TP Worker, 41 | ,  | | Logger | In policy refresh timer callback
+2025-10-14 09:55:44.367 | INFO  | .NET TP Worker, 41 | ,  | | Logger | Refreshing policies...
+2025-10-14 09:55:44.367 | INFO  | .NET TP Worker, 41 | ,  | | Logger | Initializing ActOne API client.
+2025-10-14 09:55:44.367 | INFO  | .NET TP Worker, 41 | ,  | | Logger | Requested Url: http://msc-pl-aui01-smb.use1.niceondemandaws.internal:8080/RCM/api/public/v1/auth/login
+2025-10-14 09:55:44.543 | DEBUG | .NET TP Worker, 41 | ,  | | Logger | Response received:StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+{
