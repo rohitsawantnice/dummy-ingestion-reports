@@ -1,13 +1,11 @@
 Service Name,Status,Last Seen
-Nice.Common.Service.DataAcquisition.service,failed,22h ago
+Nice.Common.Service.DataAcquisition.service,active,Running
 connectors.service,active,Running
-connectorsClonedInstance.service,unknown,inactive (dead)
-dataprocessing,inactive,6 months 7 days ago
-Nice.Common.Service.Reconciliation.service,unknown,Not managed
+connectorsClonedInstance.service,unknown,Not managed
+dataprocessing,inactive,8 months 5 days ago
+Nice.Common.Service.Reconciliation.service,active,Running
 rabbitmq-server.service,active,Running
-Nice.Common.Service.MetadataIngestion.service,inactive,4 months 2 days ago
-Nice.EmployeeRandomSampling.service,active,Running
-Nice.GenericIngestService.service,active,Running
+Nice.Common.Service.MetadataIngestion.service,active,Running
+Nice.EmployeeRandomSampling.service,inactive,8 months 5 days ago
+Nice.GenericIngestService.service,inactive,8 months 5 days ago
 move-processed-emails-to-s3.service,active,Running
-
- 
