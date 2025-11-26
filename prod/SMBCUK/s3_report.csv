@@ -1,0 +1,13 @@
+Source,Count,Command,Type,Timestamp
+Reuters_S3_Backlog,2,"/usr/local/bin/aws s3 ls s3://actimize-cs-prod-use1/smbc/Smarsh/ --recursive | grep 'Refinitive.*\.zip$' | wc -l",S3,2025-11-26 03:26:26
+Teams_Voice_S3_Backlog,12,"/usr/local/bin/aws s3 ls s3://actimize-cs-prod-use1/smbc/NTRX_SMBC_AMER_TEAMS_MEDIA_PROD_4d8ec6f8-24f8-4203-91ef-23b55dad58f6/ | wc -l",S3,2025-11-26 03:26:26
+Msteams_S3_Backlog,2077,"aws s3 ls s3://actimize-cs-prod-use1/smbc/Smarsh/ --recursive | grep 'Hourly MS Teams Export' | wc -l",S3,2025-11-26 03:26:26
+Exchange_S3_Backlog,336,"/usr/local/bin/aws s3 ls s3://actimize-cs-prod-use1/smbc/Smarsh/ --recursive | grep 'Hourly Journaled.*\.zip$' | wc -l",S3,2025-11-26 03:26:26
+Bloomberg_IM_S3_Backlog,47,"aws s3 ls s3://actimize-cs-prod-use1/smbc/Smarsh/ --recursive | grep 'Hourly Bloomberg IM Export' | wc -l",S3,2025-11-26 03:26:26
+IPC_Backlog_S3_Backlog,114,"/usr/local/bin/aws s3 ls s3://actimize-cs-prod-use1/smbc/NTRX_SMBC_AMER_IPC_PROD_4d8ec6f8-24f8-4203-91ef-23b55dad58f6/ | wc -l",S3,2025-11-26 03:26:26
+Symphony_S3_Backlog,4,"/usr/local/bin/aws s3 ls s3://actimize-cs-prod-use1/smbc/Smarsh/ --recursive | grep 'Symphony.*\.zip$' | wc -l",S3,2025-11-26 03:26:26
+Bloomberg_Email_S3_Backlog,225,"aws s3 ls s3://actimize-cs-prod-use1/smbc/Smarsh/ --recursive | grep 'Hourly Bloomberg Email Export' | wc -l",S3,2025-11-26 03:26:26
+Whatsapp_Email_S3_Backlog,2,"/usr/local/bin/aws s3 ls s3://actimize-cs-prod-use1/smbc/Smarsh/ --recursive | grep 'WhatsApp.*\.zip$' | wc -l",S3,2025-11-26 03:26:26
+Sms_Email_S3_Backlog,8,"/usr/local/bin/aws s3 ls s3://actimize-cs-prod-use1/smbc/Smarsh/ --recursive | grep 'SMS.*\.zip$' | wc -l",S3,2025-11-26 03:26:
+
+ 
