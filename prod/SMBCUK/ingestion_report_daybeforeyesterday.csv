@@ -1,11 +1,9 @@
 Source,Email,Chat,Voice,Transcription Ingestion,Attachment,Transcription Backlog
-Total,202405,16885,255,11748,85809,234155
-Lotus,8383,0,0,58,, 
-Reuters,1,0,0,,, 
-NTR-X,0,255,0,,,234155
-Exchange,133190,0,0,84538,, 
-Bloomberg,15523,0,0,704,, 
-Bloomberg(2),60710,0,0,,, 
-Symphony,14,0,0,1,, 
-SMS,122,0,0,,, 
-MicrosoftTeams,1347,0,0,508,, 
+Total,60225,7738,1443,1244,11038,6342
+Exchange,60209,0,0,0,11038,0
+ReutersDealing,0,58,0,0,0,0
+Symphony,16,0,0,0,0,0
+Reuters,0,10,0,0,0,0
+NTR-X,0,7657,1428,0,0,6127
+NiceTradingRecording,0,0,15,0,0,215
+O2,0,13,0,0,0,0
